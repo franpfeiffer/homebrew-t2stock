@@ -5,20 +5,20 @@
 class T2stock < Formula
   desc "Real-time stock price tracker"
   homepage "https://github.com/franpfeiffer/homebrew-t2stock"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.0/t2stock_1.0.0_darwin_amd64.tar.gz"
-      sha256 "b58cdd29b12752557316ca6b554d8a02d9b6619a4342ab80e1a28209fe7d68be"
+      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.1/t2stock_1.0.1_darwin_amd64.tar.gz"
+      sha256 "2f4e93a5acba4cdd24b9630d6e32bb5487711c50d6d8484dbaf1426cec439fc7"
 
       def install
         bin.install "t2stock"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.0/t2stock_1.0.0_darwin_arm64.tar.gz"
-      sha256 "ab6618135065b2c8caeb26a9c3232432d547089d9cb2c7808343586682234537"
+      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.1/t2stock_1.0.1_darwin_arm64.tar.gz"
+      sha256 "ee5fe5656f7776377692ae98382ad41649a9af73bce79668610cac8cbc54e4bd"
 
       def install
         bin.install "t2stock"
@@ -28,22 +28,22 @@ class T2stock < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.0/t2stock_1.0.0_linux_amd64.tar.gz"
-      sha256 "18c5de65e473d31eb39070b6eb6ece1763782ddc06663b3df9f47c44bbe3d1d6"
+      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.1/t2stock_1.0.1_linux_amd64.tar.gz"
+      sha256 "57c944614a41f9ff574aa381a95197b487ea3d0681b95ed99452811caaca553a"
       def install
         bin.install "t2stock"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.0/t2stock_1.0.0_linux_armv6.tar.gz"
-      sha256 "000acbdc9818a9dba07a0fb45db79490c2e67ef763856c9c4c3ddd46e2abcc9f"
+      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.1/t2stock_1.0.1_linux_armv6.tar.gz"
+      sha256 "4c88713f6ab0a2f70be5cf5dbfd3bfd1c998288187b70e5f5f0623fe4f2f066d"
       def install
         bin.install "t2stock"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.0/t2stock_1.0.0_linux_arm64.tar.gz"
-      sha256 "34cf10435802a777f4df069df78c3f054d1b44b5735922430c278ec8b885098b"
+      url "https://github.com/franpfeiffer/t2stock/releases/download/v1.0.1/t2stock_1.0.1_linux_arm64.tar.gz"
+      sha256 "27b67a4445f040a8fb2c06bd738279eab49e62cb3ebb841d847945fdae77ce08"
       def install
         bin.install "t2stock"
       end
